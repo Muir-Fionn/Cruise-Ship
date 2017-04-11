@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3E1929;
+}
+
+a {
+  color: inherit;
+}
+
+.fa {
+  padding: 0 8px;
+  font-size: 0.8em;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav li {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  padding: 0 10px;
+}
+
+.nav li:hover {
+  text-decoration: underline;
+}
+
+.nav ul {
+  width: 100%;
+  max-width: 1000px;
+  height: 60px;
+  margin: auto;
+}
+
+.mainNav {
+  position: fixed;
+  width: 100%;
+  background-color: #519E8A;
+  color: white;
+  border-bottom: 10px solid #476A6F;
+}
+
+.mainNav li {
+  display: inline-block;
+  float: right;
+  height: 50px;
+  font-size: 19px;
+}
+
+.mainNav .brand {
+  float: left;
+  cursor: default;
+  font-size: 25px;
+}
+
+.mainNav .brand:hover {
+  text-decoration: none;
+}
+
+.secondaryNav {
+  padding-top: 70px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.secondaryNav ul {
+  display: flex;
+  justify-content: space-between;
+  color: #8D91C7;
+}
+
+.secondaryNav .phone:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.slideshow {
+  position: relative;
+  height: 426px;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+
+.slide:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.active {
+  display: flex;
+}
+
+.slide > div {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.slide .text {
+  flex-grow: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5% 0;
+  text-align: center;
+  background-color: #0B3142;
+  color: #fcfdfd;
+}
+
+.slide-plus, .slide-minus {
+  position: absolute;
+  font-size: 50px;
+  top: 188px;
+  z-index: 2;
+  cursor: pointer;
+  color: white;
+}
+
+.slide-plus {
+  right: 50px;
+}
+
+.slide-minus {
+  left: 50px;
+}
+
+.photo {
+  background-image: url(https://images.pexels.com/photos/144237/cruise-ship-cruiser-cruise-ship-144237.jpeg?h=400&auto=compress&cs=tinysrgb);
+  background-size: cover;
+  background-position: center;
+}
+
+.search {
+  height: 100px;
+  width: 100%;
+  background-color: #146650;
+  padding: 10px 0;
+  color: #FCFCFD;
+}
+
+.search .header {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.search form {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search form select {
+  width: 200px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+.search form input {
+  width: 150px;
+  height: 35px;
+}

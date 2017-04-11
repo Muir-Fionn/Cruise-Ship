@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cruise Ship</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="nav">
+      <!-- Main Nav -->
+      <div class="mainNav">
+        <ul>
+          <li class='brand'>Cruise Brand</li>
+          <li><i class="fa fa-search"></i>Search</li>
+          <li><i class="fa fa-heart-o"></i>Saved</li>
+          <li><i class="fa fa-user"></i>Sign In/Register</li>
+          <li><i class="fa fa-tag"></i>Deals</li>
+          <li><i class="fa fa-envelope"></i>Email Sign-Up</li>
+        </ul>
+      </div>
+      <!-- Secondary Nav -->
+      <div class="secondaryNav">
+        <ul>
+          <li>Plan a Cruise</li>
+          <li>Our Ships</li>
+          <li>Destinations</li>
+          <li>Check a Booking</li>
+          <li>Contact Us</li>
+          <li class='phone'>1-800-Number</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slideshow">
+      <!-- Slide Controls -->
+      <div class="slide-minus"> < </div>
+      <div class="slide-plus"> > </div>
+
+      <!-- Slide Construct: Pic, Text Div, Pic -->
+      <div class="slide active">
+        <div class="photo"></div>
+        <div class="text">
+          <h2 class="title">Package Deal</h2>
+          <div class="description">
+            <p><span class="focus">Free</span>Feature Essence</p>
+            <p>Save up to <span class="focus">30%</span></p>
+          </div>
+          <div class="btn btn-red">View Deals</div>
+          <h5 class="dateRange">July - November 2017</h5>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="photo"></div>
+        <div class="text">
+          <h2 class="title">Ship Deal</h2>
+          <div class="description">
+            <p>Book Now for <span class="focus">50%</span> off select cruises</p>
+          </div>
+          <div class="btn btn-red">View Deals</div>
+          <h5 class="dateRange">Sailing April - July 2018</h5>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="photo"></div>
+        <div class="text">
+          <h2 class="title">Upcoming Package</h2>
+          <div class="description">
+            <p>Debuts March 2018</p>
+          </div>
+          <div class="btn btn-red">Learn More</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search">
+      <div class="header">
+        <h2>Find a cruise</h2>
+        <a href="#">Advanced Search</a>
+      </div>
+      <!-- Simple form with dropdowns, links, btn (reference Princess) -->
+      <form>
+        <select name="date">
+          <option value="any">Month/Year: Any</option>
+          <option value="April">April 2017</option>
+          <option value="May">May 2017</option>
+          <option value="June">June 2017</option>
+          <option value="July">July 2017</option>
+          <option value="August">August 2017</option>
+          <option value="September">September 2017</option>
+          <option value="October">October 2017</option>
+          <option value="November">November 2017</option>
+        </select>
+        <select name="destination">
+          <option value="any">Destination: Any</option>
+          <option value="Caribbean">Caribbean</option>
+          <option value="Mediterranean">Mediterranean</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Hawaii">Hawaii</option>
+        </select>
+        <select name="port">
+          <option value="any">Port of Origin: Any</option>
+          <option value="Miami">Miami</option>
+          <option value="Key West">Key West</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="San Diego">San Diego</option>
+          <option value="Venice, Italy">Venice, Italy</option>
+          <option value="Athens, Greece">Athens, Greece</option>
+        </select>
+        <select name="length">
+          <option value="any">Cruise Length: Any</option>
+          <option value="1-5">1-5 Days</option>
+          <option value="6-8">6-8 Days</option>
+          <option value="9-15">9-15 Days</option>
+          <option value="16">16 or More Days</option>
+        </select>
+        <input type="submit" value="Search Now">
+      </form>
+    </div>
+
+    <div class="deals">
+      <!-- Simple deal cards with blurb title block, pic backgound, more info btn -->
+      <div class="deal">
+        <div class="name">
+          <h3>Destination Deal</h3>
+        </div>
+        <div class="description">
+          <h3>Destination Location</h3>
+          <p></p>
+          <div class="btn btn-white">Book Now</div>
+        </div>
+      </div>
+      <div class="deal">
+        <div class="name">
+          <h3>Cruise Package</h3>
+        </div>
+        <h3>Package Title</h3>
+        <p></p>
+        <div class="btn btn-white">Learn More</div>
+      </div>
+      <div class="deal">
+        <div class="name">
+          <h3>Seasonal Sale</h3>
+        </div>
+        <h3></h3>
+        <p>Up to <span class='percent'>40%</span> off</p>
+        <div class="btn btn-white">View Deals</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <!-- two feature divs with a pic on one side and text div on the other -->
+      <div class="feature">
+        <div class="photo"></div>
+        <div class="text">
+          <h1>Introducing Something</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">Learn More about this</a>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="photo"></div>
+        <div class="text">
+          <h1>Reasons to Use Us</h1>
+          <ul>
+            <li><a href="#">Reason 1</a></li>
+            <li><a href="#">Reason 2</a></li>
+            <li><a href="#">Reason 3</a></li>
+            <li><a href="#">Reason 4</a></li>
+            <li><a href="#">Reason 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!-- Recreate Princess Footer: Need Assistance? | Find a travel agent(a) | Contact Us(a) | Call: 1-800-Number -->
+      <span>Need Assistance?</span>
+      <span><a href="#">Find a travel agent</a></span>
+      <span><a href="#">Contact Us</a></span>
+      <span>Call: 1-800-Number</span>
+    </div>
+
+    <script src="scripts.js" charset="utf-8"></script>
+  </body>
+</html>
