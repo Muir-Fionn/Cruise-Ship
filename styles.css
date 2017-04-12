@@ -6,10 +6,12 @@
 
 body {
   color: #3E1929;
+  background-color: #F8FFFD;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 a {
-  color: inherit;
+  color: #464EBF;
 }
 
 .fa {
@@ -42,6 +44,7 @@ a {
 
 .mainNav {
   position: fixed;
+  z-index: 2;
   width: 100%;
   background-color: #519E8A;
   color: white;
@@ -59,6 +62,7 @@ a {
   float: left;
   cursor: default;
   font-size: 25px;
+  font-family: 'Cinzel', serif;
 }
 
 .mainNav .brand:hover {
@@ -69,12 +73,17 @@ a {
   padding-top: 70px;
   list-style-type: none;
   text-transform: uppercase;
+  background-color: #CBEFE6;
 }
 
 .secondaryNav ul {
   display: flex;
   justify-content: space-between;
   color: #8D91C7;
+}
+
+.secondaryNav .phone {
+  color: initial;
 }
 
 .secondaryNav .phone:hover {
@@ -100,6 +109,12 @@ a {
   flex-direction: row-reverse;
 }
 
+.slide {
+  background-image: url(https://images.pexels.com/photos/286398/pexels-photo-286398.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
 .active {
   display: flex;
 }
@@ -116,19 +131,26 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 5% 0;
+  padding: 30px 0;
   text-align: center;
-  background-color: #0B3142;
-  color: #fcfdfd;
+  background-color: #F8FFFD;
 }
 
-.slide-plus, .slide-minus {
+.slide .spacing {
+  flex-grow: 0;
+  width: 150px;
+  height: 100%;
+}
+
+.control {
   position: absolute;
   font-size: 50px;
   top: 188px;
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
   color: white;
+  background-color: rgba(132, 163, 154, 0.3);
+  padding: 0 1%;
 }
 
 .slide-plus {
@@ -139,10 +161,52 @@ a {
   left: 50px;
 }
 
-.photo {
-  background-image: url(https://images.pexels.com/photos/144237/cruise-ship-cruiser-cruise-ship-144237.jpeg?h=400&auto=compress&cs=tinysrgb);
-  background-size: cover;
-  background-position: center;
+.slide .description {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.slide .description p {
+  padding: 20px 0;
+}
+
+.slide .title {
+  font-size: 40px;
+}
+
+.focus {
+  font-size: 45px;
+  display: block;
+  font-weight: bold;
+}
+
+.slide .description p + p {
+  border-top: 2px solid;
+}
+
+.slide .btn {
+  width: 150px;
+  height: 40px;
+  margin: 5px 0;
+  line-height: 40px;
+  font-size: 25px;
+  color: #F8FFFD;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-orange {
+  background-color: orange;
 }
 
 .search {
@@ -151,6 +215,10 @@ a {
   background-color: #146650;
   padding: 10px 0;
   color: #FCFCFD;
+}
+
+.search a {
+  color: inherit;
 }
 
 .search .header {
@@ -180,4 +248,171 @@ a {
 .search form input {
   width: 150px;
   height: 35px;
+  font-size: 20px;
+  border: none;
+}
+
+.features {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.feature {
+  width: 100%;
+  display: flex;
+}
+
+.feature:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.feature .text, .feature .image {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.feature .container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature .image .container{
+  background-size: cover;
+  background-position: right;
+  background-image: url(https://images.pexels.com/photos/2719/sea-ocean-boat-ship.jpg?w=500&auto=compress&cs=tinysrgb);
+}
+
+.feature:nth-of-type(2) .image .container {
+  background-image: url(https://images.pexels.com/photos/30906/pexels-photo-30906.jpg?w=500&auto=compress&cs=tinysrgb);
+}
+
+.feature .text .container{
+  height: 100%;
+  padding: 30px;
+}
+
+.feature .text .container > * {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.container ol {
+  list-style-position: inside;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.deals {
+  width: 100%;
+  height: 300px;
+  background-color: #20A380;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal {
+  width: 225px;
+  height: 280px;
+  margin: 0 10px;
+  border: 1px solid white;
+  color: #FCFFFE;
+}
+
+.name {
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  background-color: #146650;
+}
+
+.deal .description {
+  position: relative;
+  width: 100%;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  text-align: center;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.description .btn {
+  margin-bottom: 50px;
+  color: #20A380;
+  background-color: #FCFFFE;
+  width: 125px;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.deal .description h3 {
+  font-size: 30px;
+  background-color: rgba(125, 125, 125, 0.5);
+}
+
+.deal .description p {
+  font-size: 25px;
+  background-color: rgba(125,125,125, 0.3);
+  width: 100%;
+}
+
+.description .percent {
+  font-size: 50px;
+  display: block;
+}
+
+.deal:nth-of-type(1) .description {
+  background-image: url(https://images.pexels.com/photos/371680/pexels-photo-371680.jpeg?w=250&auto=compress&cs=tinysrgb);
+}
+
+.deal:nth-of-type(2) .description {
+  background-image: url(https://images.pexels.com/photos/24491/pexels-photo-24491.jpg?w=250&auto=compress&cs=tinysrgb);
+}
+
+.deal:nth-of-type(3) .description {
+  background-image: url(https://images.pexels.com/photos/356330/pexels-photo-356330.jpeg?w=250&auto=compress&cs=tinysrgb);
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #519E8A;
+  color: #FCFFFE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer span {
+  text-align: center;
+  font-size: 22px;
+  padding: 0 25px;
+}
+
+.footer span + span {
+  border-left: 1px solid;
 }
